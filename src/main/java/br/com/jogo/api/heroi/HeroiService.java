@@ -15,6 +15,7 @@ public class HeroiService {
 
     @Autowired
     private HeroiRepository heroiRepository;
+    private final int levelMultiplicador = 3;
 
     public List<Heroi> buscaTodosHerois() {
         return heroiRepository.findAll();
@@ -33,6 +34,7 @@ public class HeroiService {
     }
 
     public Heroi criaHeroi(@Valid Heroi heroi) {
+        heroi.setLevel(heroi.getLevel() * levelMultiplicador);
         return heroiRepository.save(heroi);
     }
 
