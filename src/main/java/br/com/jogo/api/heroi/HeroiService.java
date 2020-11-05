@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import javax.validation.Valid;
 import java.util.List;
 import java.util.Optional;
+import java.util.Random;
 
 @Service
 public class HeroiService {
@@ -22,6 +23,13 @@ public class HeroiService {
     public ResponseEntity<Heroi> buscaHeroi(Long codigo) {
         Optional<Heroi> buscaHeroi = heroiRepository.findById(codigo);
         return buscaHeroi.map(ResponseEntity::ok).orElseGet(() -> ResponseEntity.noContent().build());
+    }
+
+    public Heroi buscaHeroiAleatorio() {
+        long qntHerois = heroiRepository.count();
+        Random random = new Random();
+        int randomHeroi = random.nextInt((int) qntHerois) + 1;
+        return heroiRepository.findFirstByCodigo((long) randomHeroi);
     }
 
     public Heroi criaHeroi(@Valid Heroi heroi) {
