@@ -34,7 +34,7 @@ public class Vilao {
     private String nome;
 
     @Column(name = "OUTRO_NOME")
-    private String outro_nome;
+    private String outroNome;
 
     @NotNull
     @Min(1)

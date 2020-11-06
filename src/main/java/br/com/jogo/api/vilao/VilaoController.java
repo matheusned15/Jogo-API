@@ -1,5 +1,6 @@
 package br.com.jogo.api.vilao;
 
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +18,8 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("/herois")
+@RequestMapping("/viloes")
+@Api(tags = "API - VILOES")
 public class VilaoController {
 
     @Autowired
