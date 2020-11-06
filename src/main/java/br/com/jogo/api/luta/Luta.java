@@ -37,34 +37,34 @@ public class Luta {
 
     @NotNull
     @Column(name = "NOME_VENCEDOR")
-    private String nome_vencedor;
+    private String nomeVencedor;
 
     @NotNull
     @Column(name = "LEVEL_VENCEDOR")
-    private Integer level_vencedor;
+    private Integer levelVencedor;
 
     @NotNull
     @Column(name = "IMAGEM_VENCEDOR")
-    private String imagem_vencedor;
+    private String imagemVencedor;
 
     @NotNull
     @Column(name = "NOME_PERDEDOR")
-    private  String nome_perdedor;
+    private  String nomePerdedor;
 
     @NotNull
     @Column(name = "LEVEL_PERDEDOR")
-    private Integer level_perdedor;
+    private Integer levelPerdedor;
 
     @NotNull
     @Column(name = "IMAGEM_PERDEDOR")
-    private String imagem_perdedor;
+    private String imagemPerdedor;
 
     @NotNull
     @Column(name = "TIME_VENCEDOR")
-    private String time_vencedor;
+    private String timeVencedor;
 
     @NotNull
     @Column(name = "TIME_PERDEDOR")
-    private String time_perdedor;
+    private String timePerdedor;
 
 }
