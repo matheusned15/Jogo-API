@@ -11,7 +11,7 @@ CREATE TABLE HEROI
     CONSTRAINT CODIGO_HEROI_PK PRIMARY KEY (ID)
 );
 
-===============================================================================================
+---------------------------------------------------------------------------------------------------
 -Script para a tabela Vilão:
 CREATE TABLE VILAO
 (
@@ -23,7 +23,7 @@ CREATE TABLE VILAO
     PODERES    VARCHAR,
     CONSTRAINT CODIGO_VILAO_PK PRIMARY KEY (CODIGO)
 );
-===============================================================================================
+---------------------------------------------------------------------------------------------------
 -Script para a tabela Luta:
 CREATE TABLE LUTA
 (
