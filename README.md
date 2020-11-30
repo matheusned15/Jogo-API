@@ -39,7 +39,7 @@ CREATE TABLE LUTA
     TIME_PERDEDOR   VARCHAR NOT NULL,
     CONSTRAINT CODIGO_LUTA_PK PRIMARY KEY (CODIGO)
 )
-===============================================================================================
+---------------------------------------------------------------------------------------------------
 -Script para massa de dados:
 -- HEROIS
 INSERT INTO HEROI(CODIGO, NOME, OUTRO_NOME, IMAGEM, PODERES, LEVEL)
