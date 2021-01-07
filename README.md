@@ -1,5 +1,7 @@
 # Jogo-API
--Script para a tabela Héroi:
+
+## Script SQL para a tabela Héroi:
+
 CREATE TABLE HEROI
 (
     ID     NUMBER(11) GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT 1),
@@ -12,7 +14,7 @@ CREATE TABLE HEROI
 );
 
 ---------------------------------------------------------------------------------------------------
--Script para a tabela Vilão:
+## Script SQL para a tabela Vilão:
 CREATE TABLE VILAO
 (
     CODIGO     NUMBER(11) GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT 1),
@@ -24,7 +26,8 @@ CREATE TABLE VILAO
     CONSTRAINT CODIGO_VILAO_PK PRIMARY KEY (CODIGO)
 );
 ---------------------------------------------------------------------------------------------------
--Script para a tabela Luta:
+## Script SQL para a tabela Luta:
+
 CREATE TABLE LUTA
 (
     CODIGO          NUMBER(11) GENERATED ALWAYS AS IDENTITY (START WITH 1 INCREMENT 1),
@@ -40,7 +43,8 @@ CREATE TABLE LUTA
     CONSTRAINT CODIGO_LUTA_PK PRIMARY KEY (CODIGO)
 )
 ---------------------------------------------------------------------------------------------------
--Script para massa de dados:
+## Script SQL para massa de dados:
+
 -- HEROIS
 INSERT INTO HEROI(CODIGO, NOME, OUTRO_NOME, IMAGEM, PODERES, LEVEL)
 VALUES (1, 'Chewbacca', '',
